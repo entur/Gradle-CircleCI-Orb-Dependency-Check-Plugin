@@ -1,0 +1,23 @@
+*~
+*.orig
+*.iml
+*.ipr
+*.iws
+.idea/
+/.metadata/
+tmp/
+logs/
+var/
+localenv.sh
+# Gradle
+.gradle/
+build/
+# JMeter results file
+*.jtl
+.cache-main
+.cache-tests
+.classpath
+.project
+.settings/
+out/**
+*.tgz
