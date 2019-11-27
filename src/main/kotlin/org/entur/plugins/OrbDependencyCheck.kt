@@ -32,7 +32,7 @@ open class OrbDependencyCheck : DefaultTask() {
         }
 
         val configText = circleCiConfigFile.readText(Charsets.UTF_8)
-        val orbNameRegex = "[a-z]+/[a-z]+@[0-9]+\\.[0-9]+\\.[0-9]+".toRegex()
+        val orbNameRegex = "[a-z-]+/[a-z-]+@[0-9]+\\.[0-9]+\\.[0-9]+".toRegex()
 
         val currentOrbs = orbNameRegex.findAll(configText)
         val orbsWithVersions = currentOrbs.map { it.value }
