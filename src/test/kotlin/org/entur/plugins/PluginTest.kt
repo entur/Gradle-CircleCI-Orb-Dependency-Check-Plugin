@@ -1,7 +1,7 @@
 package org.entur.plugins
 
-import io.kotlintest.shouldNotBe
-import io.kotlintest.specs.WordSpec
+import io.kotest.core.spec.style.WordSpec
+import io.kotest.matchers.shouldNotBe
 import org.gradle.testfixtures.ProjectBuilder
 
 class PluginTest : WordSpec({
